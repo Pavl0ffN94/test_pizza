@@ -2,7 +2,20 @@ import React from 'react';
 import styles from './styles.module.sass';
 import {Role} from '../../types';
 
-export default function HeaderImpl({
+interface IHeader {
+  setCount: () => void;
+  setSortOrder: () => void;
+  setSortByName: () => void;
+  setSortByStatus: () => void;
+  setSelectedRole: () => void;
+  count: string;
+  sortOrder: string;
+  sortByName: string;
+  sortByStatus: string;
+  selectedRole: string;
+}
+
+const HeaderImpl: React.FC<IHeader> = ({
   setCount,
   setSortOrder,
   setSortByName,
@@ -13,7 +26,7 @@ export default function HeaderImpl({
   sortByName,
   sortByStatus,
   selectedRole,
-}) {
+}) => {
   return (
     <div className={styles.header}>
       <div className={styles.selectors}>
@@ -72,4 +85,6 @@ export default function HeaderImpl({
       </div>
     </div>
   );
-}
+};
+
+export default HeaderImpl;

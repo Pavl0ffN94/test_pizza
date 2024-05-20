@@ -11,6 +11,7 @@ function App() {
   const [sortByName, setSortByName] = useState<string>('none');
   const [sortByStatus, setSortByStatus] = useState<string>('none');
   const [selectedRole, setSelectedRole] = useState<string>('none');
+
   const {data, isLoading, isError, error} = useGetEmployeesQuery(count);
 
   const filteredAndSortedData = useMemo(() => {
