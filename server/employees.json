@@ -1,31 +1,31 @@
 {
   "employees": [
     {
-      "id": 1,
       "name": "Илья Емельянов",
-      "isArchive": false,
+      "isArchive": true,
       "role": "driver",
       "phone": "+7 (883) 508-3269",
-      "birthday": "12.02.1982"
+      "birthday": "12.02.1982",
+      "id": "1"
     },
     {
-      "id": 2,
       "name": "Александр Ларионов",
       "isArchive": true,
-      "role": "waiter",
+      "role": "",
       "phone": "+7 (823) 440-3602",
-      "birthday": "26.01.1986"
+      "birthday": "26.01.1986",
+      "id": "2"
     },
     {
-      "id": 3,
       "name": "Богдан Давыдов",
-      "isArchive": false,
+      "isArchive": true,
       "role": "driver",
       "phone": "+7 (971) 575-2645",
-      "birthday": "29.11.1990"
+      "birthday": "29.11.1990",
+      "id": "3"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Олимпиада Макарова",
       "isArchive": true,
       "role": "waiter",
@@ -33,15 +33,15 @@
       "birthday": "06.01.1987"
     },
     {
-      "id": 5,
       "name": "Алла Котова",
       "isArchive": false,
       "role": "cook",
       "phone": "+7 (948) 523-2964",
-      "birthday": "26.01.1982"
+      "birthday": "26.01.1982",
+      "id": "5"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Кира Колесникова",
       "isArchive": true,
       "role": "cook",
@@ -49,7 +49,7 @@
       "birthday": "25.02.1972"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Александр Третьяков",
       "isArchive": false,
       "role": "driver",
@@ -57,7 +57,7 @@
       "birthday": "31.05.1979"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Пелагея Морозова",
       "isArchive": false,
       "role": "driver",
@@ -65,7 +65,7 @@
       "birthday": "11.09.1981"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Агафон Громов",
       "isArchive": true,
       "role": "driver",
@@ -73,7 +73,7 @@
       "birthday": "07.06.1988"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Владлен Тетерин",
       "isArchive": true,
       "role": "driver",
@@ -81,7 +81,7 @@
       "birthday": "20.06.1978"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Валерий Пестов",
       "isArchive": false,
       "role": "cook",
@@ -89,7 +89,7 @@
       "birthday": "20.01.1987"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Даниил Кузнецов",
       "isArchive": true,
       "role": "waiter",
@@ -97,7 +97,7 @@
       "birthday": "25.05.1987"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Фёдор Веселов",
       "isArchive": true,
       "role": "waiter",
@@ -105,7 +105,7 @@
       "birthday": "16.12.1972"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Пантелеймон Ефимов",
       "isArchive": true,
       "role": "cook",
@@ -113,7 +113,7 @@
       "birthday": "17.04.1986"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Иванна Калашникова",
       "isArchive": true,
       "role": "waiter",
@@ -121,7 +121,7 @@
       "birthday": "24.03.1982"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Прасковья Кондратьева",
       "isArchive": true,
       "role": "cook",
@@ -129,12 +129,20 @@
       "birthday": "07.06.1983"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Евдокия Филиппова",
       "isArchive": false,
       "role": "waiter",
       "phone": "+7 (877) 450-3253",
       "birthday": "03.12.1994"
+    },
+    {
+      "id": "be075f3d-6348-4f13-94fe-b584687bc341",
+      "name": "Варфоломей Петров",
+      "role": "driver",
+      "phone": "+7 (996) 341-8515",
+      "birthday": "23.06.1994",
+      "isArchive": true
     }
   ]
 }

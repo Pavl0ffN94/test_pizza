@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.sass';
 import {Role} from '../../types';
+import {useNavigate} from 'react-router-dom';
 
 interface IHeader {
   setCount: () => void;
@@ -27,6 +28,12 @@ const HeaderImpl: React.FC<IHeader> = ({
   sortByStatus,
   selectedRole,
 }) => {
+  const navigate = useNavigate();
+
+  const handleAddEmployee = () => {
+    navigate('/add');
+  };
+
   return (
     <div className={styles.header}>
       <div className={styles.selectors}>
@@ -81,7 +88,7 @@ const HeaderImpl: React.FC<IHeader> = ({
             </select>
           </label>
         </div>
-        <button> Добавить сотрудника</button>
+        <button onClick={handleAddEmployee}> Добавить сотрудника</button>
       </div>
     </div>
   );

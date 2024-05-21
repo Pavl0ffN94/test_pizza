@@ -4,6 +4,7 @@ import {Employe} from './types';
 import {EmployeCard} from './components/employeCard';
 import styles from './app.module.sass';
 import {Header} from './components/header';
+import {Link} from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState<string>('');
@@ -71,7 +72,9 @@ function App() {
       />
       <div className={styles['employee-list']}>
         {filteredAndSortedData.map((employe: Employe) => (
-          <EmployeCard key={employe.id} employe={employe} />
+          <Link to={`${employe.id}`} key={employe.id}>
+            <EmployeCard employe={employe} />
+          </Link>
         ))}
       </div>
     </div>
