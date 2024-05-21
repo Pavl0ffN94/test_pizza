@@ -6,7 +6,7 @@ export const employeesApi = createApi({
   baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3001/'}),
   tagTypes: ['Employe'],
   endpoints: build => ({
-    getEmployees: build.query<Employees[], string | void>({
+    getEmployees: build.query<Employees, string | void>({
       query: limit => `employees?${limit && `_limit=${limit}`}`,
       providesTags: result =>
         result
@@ -18,7 +18,7 @@ export const employeesApi = createApi({
     }),
     getOneEmploye: build.query({
       query: id => `employees/${id}`,
-      providesTags: (result, error, id) => [{type: 'Employe', id}],
+      providesTags: (result, id) => [{type: 'Employe', id}],
     }),
     updateEmploye: build.mutation({
       query: ({id, ...patch}) => ({
@@ -26,7 +26,7 @@ export const employeesApi = createApi({
         method: 'PUT',
         body: patch,
       }),
-      invalidatesTags: (result, error, {id}) => [{type: 'Employe', id}],
+      invalidatesTags: (result, {id}) => [{type: 'Employe', id}],
     }),
     createEmploye: build.mutation({
       query: newEmploye => ({
